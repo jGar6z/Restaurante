@@ -46,7 +46,7 @@ header #menu {
 header #menu a {
     position: relative;
     display: flex;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 16px;
     color: #FFF;
     text-decoration: none;
@@ -383,41 +383,159 @@ header #menu a.active {
 /*Menu Page*/
 /*Menu Page Main*/
 .menu-page .main {
+    background-image: url(../assets/menu-page-main.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/*Menu Page Menu*/
+.menu-page .menu {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin: 72px auto;
+}
+
+.menu-page .menu .menu-item {
     display: flex;
     flex-direction: row;
-    margin: 100px 0;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu-page .menu-item a {
+    font-weight: 600;
+    transition: 250ms;
+    padding: 5px;
+}
+
+.menu-page .menu-item a:hover {
+    color: #ECBA74;
+    cursor: pointer;
+}
+
+.menu-page .menu-item .active {
+    color: #ECBA74;
+}
+
+.menu-page .menu .menu-dishes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 58px 0;
+    gap: 20px;
+}
+
+.menu-page .menu-dishes .container {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.menu-page .menu-dishes .container img {
+    width: 150px;
+    height: max-content;
+}
+
+.menu-page .menu-dishes .container .title {
+    font-size: 20px;
+    padding: 15px 0;
+}
+
+.menu-page .menu-dishes .container p {
+    font-size: 14px;
+}
+
+.menu-page #menuPizza {
+    animation: fadeIn 1s;
+}
+
+.menu-page #menuBurguer {
+    display: none;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.menu-page #menuDrink {
+    display: none;
+    animation: fadeIn 1s;
+}
+
+.menu-page .menu .btn {
+    width: max-content;
+    margin: 0 auto;
+}
+
+/*Menu Page Types*/
+.menu-page .types {
+    display: flex;
+    flex-direction: column;
+    margin: 72px 0;
+}
+
+.menu-page .types .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    gap: 50px;
 }
 
-.menu-page .main-text {
+.menu-page .types .container-img img {
+    width: 400px;
+}
+
+.menu-page .types .container-text {
+    width: 40%;
+}
+
+.menu-page .types .container-text .title {
+    padding: 10px 0;
+}
+
+/*Menu Page Special*/
+.menu-page .special {
+    background-image: url(../assets/menu-page-special-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 450px;
+}
+
+.menu-page .special-text {
     display: flex;
     flex-direction: column;
-    width: 35%;
+    padding: 78px;
+    gap: 10px;
+    width: 40%;
+    margin-left: 50%;
 }
 
-.menu-page .title {
-    padding: 15px 0;
-    font-size: 36px;
-}
-
-.menu-page .btn {
+.menu-page .special-text .btn {
     width: max-content;
+    margin-top: 30px;
 }
 
-.menu-page .main-img img {
-    width: 700px;
-}
-
-/*Menu Page Map*/
-.menu-page .map .txt, .menu-page .map .title {
-    width: 65%;
-    margin: 0 auto;
-}
-.menu-page .map{
+.menu-page .map {
     width: 100%;
+}
+
+.menu-page .map .title, .menu-page .txt {
+    margin: 0 150px;
 }
 
 /*About Page*/
@@ -428,7 +546,7 @@ header #menu a.active {
     align-items: center;
     justify-content: center;
     gap: 62px;
-    margin: 72px 0;
+    margin: 120px 0;
 }
 
 .about-page .story .story-imgs {
@@ -704,6 +822,10 @@ footer .footer-menu {
 
 footer .footer-menu p {
     font-weight: 500;
+}
+
+footer .footer-menu .active {
+    color: #ECBA74;
 }
 
 footer .footer-menu p:hover {

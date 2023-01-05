@@ -34,4 +34,39 @@ function nextImage(){
     document.getElementById("radio"+count).checked = true;
 }
 
-//Email verification
+//Menu
+//Show Pizzas on Menu
+function showMenuPizza() {
+    document.getElementById('menuPizza').style.display = "flex";
+    document.getElementById('menuBurguer').style.display = "none";
+    document.getElementById('menuDrink').style.display = "none";
+    document.getElementById('menuPizza').style.animationName = "fadeIn";
+    
+    document.querySelector('#itemPizza').classList.add("active");
+    document.querySelector('#itemBurguer').classList.remove("active");
+    document.querySelector('#itemDrink').classList.remove("active");
+}
+
+//Show Burguers on Menu
+function showMenuBurguer() {
+    document.getElementById('menuPizza').style.display = "none";
+    document.getElementById('menuBurguer').style.display = "flex";
+    document.getElementById('menuDrink').style.display = "none";
+    document.getElementById('menuBurguer').style.animationName = "fadeIn";
+    
+    document.querySelector('#itemPizza').classList.remove("active");
+    document.querySelector('#itemBurguer').classList.add("active");
+    document.querySelector('#itemDrink').classList.remove("active");
+}
+
+//Show drinks on Menu
+function showMenuDrink() {
+    document.getElementById('menuPizza').style.display = "none";
+    document.getElementById('menuBurguer').style.display = "none";
+    document.getElementById('menuDrink').style.display = "flex";
+    document.getElementById('menuDrink').style.animationName = "fadeIn";
+    
+    document.querySelector('#itemPizza').classList.remove("active");
+    document.querySelector('#itemBurguer').classList.remove("active");
+    document.querySelector('#itemDrink').classList.add("active");
+}

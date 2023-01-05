@@ -32,27 +32,146 @@
     <main class="menu-page">
         <!--Main-->
         <section class="main">
-            <div class="main-text">
-                <h1 class="title">Veja algumas de nossas especialidades</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <button class="btn">Fazer Pedido</button>
+            <h1 class="title">O que nós oferecemos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </section>
+
+        <!--Menu-->
+        <section class="menu">
+            <div class="menu-item">
+                <a class="active" id="itemPizza" onclick="showMenuPizza()">Pizza</a>
+                <a id="itemBurguer" onclick="showMenuBurguer()">Hambúrger</a>
+                <a id="itemDrink" onclick="showMenuDrink()">Bebidas</a>
             </div>
-            <div class="main-img">
-                <img src="assets/menu-page-main.png" alt="menu-page-main.png">
+
+            <div class="menu-dishes" id="menuPizza">
+                <div class="container">
+                    <img src="assets/menu-pizza-img1.png" alt="menu-pizza-img1">
+                    <div class="container-text">
+                        <h1 class="title">Calabresa</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$45</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-pizza-img2.png" alt="menu-pizza-img2">
+                    <div class="container-text">
+                        <h1 class="title">Queijo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$40</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-pizza-img3.png" alt="menu-pizza-img3">
+                    <div class="container-text">
+                        <h1 class="title">Frango</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$38</h1>
+                    </div>
+                </div>
             </div>
+
+            <div class="menu-dishes" id="menuBurguer">
+                <div class="container">
+                    <img src="assets/menu-burguer-img1.png" alt="menu-burguer-img1.png">
+                    <div class="container-text">
+                        <h1 class="title">X-Bacon</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$35</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-burguer-img2.png" alt="menu-burguer-img2.png">
+                    <div class="container-text">
+                        <h1 class="title">Americano</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$22</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-burguer-img3.png" alt="menu-burguer-img3.png">
+                    <div class="container-text">
+                        <h1 class="title">Big-Cheese</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$32</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-dishes" id="menuDrink">
+                <div class="container">
+                    <img src="assets/menu-drink-img1.png" alt="menu-drink-img1.png">
+                    <div class="container-text">
+                        <h1 class="title">Coca-cola</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$12</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-drink-img2.png" alt="menu-drink-img2.png">
+                    <div class="container-text">
+                        <h1 class="title">Pepsi</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$10</h1>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <img src="assets/menu-drink-img3.png" alt="menu-drink-img3.png">
+                    <div class="container-text">
+                        <h1 class="title">Suco de Laranja</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h1 class="title">R$7</h1>
+                    </div>
+                </div>
+            </div>
+
+            <button class="btn">Fazer Pedido</button>
         </section>
 
         <!--Types-->
         <section class="types">
+            <section class="container container-left">
+                <div class="container-img">
+                    <img src="assets/types-vegetables-img.png" alt="types-vegetables-img.png">
+                </div>
+                <div class="container-text">
+                    <h1 class="title">Salada de Vegetais</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, asperiores ratione. Consequuntur voluptatibus, tempore deleniti consequatur suscipit.</p>
+                    <button class="btn">Fazer Pedido</button>
+                </div>
+            </section>
 
+            <section class="container container-right">
+                <div class="container-text">
+                    <h1 class="title">Berinjelas Brown Slice</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam dolore nulla dolor! Sapiente obcaecati libero voluptatum, impedit sequi aperiam.</p>
+                    <button class="btn">Fazer Pedido</button>
+                </div>
+                <div class="container-img">
+                    <img src="assets/types-berinjela-img.png" alt="types-berinjela-img.png">
+                </div>
+            </section>
+
+            <section class="container container-left">
+                <div class="container-img">
+                    <img src="assets/types-beef-img.png" alt="types-beef-img.png">
+                </div>
+                <div class="container-text">
+                    <h1 class="title">Bife com Fritas</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quibusdam, harum corporis sunt minima cupiditate nostrum dignissimos.</p>
+                    <button class="btn">Fazer Pedido</button>
+                </div>
+            </section>
         </section>
 
         <!--Today's Special-->
         <section class="special">
-            <div class="special-img">
-                <img src="" alt="">
-            </div>
-
             <div class="special-text">
                 <h1 class="title">Especial de Hoje</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis accusantium rerum magnam ipsam dignissimos inventore nemo velit, praesentium omnis illo, laudantium ullam labore, corrupti maiores! Doloremque voluptatum veritatis quia debitis.</p>
@@ -81,11 +200,11 @@
             <a href="index.html">
                 <p>Início</p>
             </a>
-            <a href="#gallery">
+            <a href="index.html#gallery">
                 <p>Galeria</p>
             </a>
             <a href="menu.html">
-                <p>Cardápio</p>
+                <p class="active">Cardápio</p>
             </a>
             <a href="about.html">
                 <p>Sobre</p>
