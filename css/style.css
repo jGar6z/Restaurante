@@ -652,6 +652,8 @@ header #menu a.active {
 /*Contact Page Main*/
 .contact-page .main {
     background-image: url(../assets/contact-page-main-img.jpg);
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
